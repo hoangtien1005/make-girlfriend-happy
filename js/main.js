@@ -117,7 +117,6 @@ function switchButton() {
 }
 
 function moveButton() {
-  new Audio("sound/Swish1.mp3").play().catch(function () {});
   var W = $(window).width();
   var H = $(window).height();
   var noW = $("#no").outerWidth();
@@ -165,7 +164,9 @@ $("#no").on("click", function () {
     descEl.offsetHeight;
     descEl.innerHTML =
       '<div class="desc-denial">' +
-      '<img src="' + dogImg + '" class="desc-sad-dog" alt="">' +
+      '<img src="' +
+      dogImg +
+      '" class="desc-sad-dog" alt="">' +
       '<span class="desc-sad-caption">' +
       caption +
       "</span>" +
