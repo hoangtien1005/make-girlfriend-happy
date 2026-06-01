@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <title id="titleWeb"></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-heart">💖</div>
+    </div>
+
+    <div id="particles"></div>
+    <div id="bg"></div>
+
+    <!-- Intro modal -->
+    <div id="intro-modal" class="modal-overlay">
+        <div class="glass-card intro-card">
+            <img src="img/loopy-love.jpg" class="intro-img" alt="">
+            <h2 id="introTitle" class="card-title"></h2>
+            <p id="introDesc" class="card-desc"></p>
+            <button id="btnIntro" class="btn-primary"></button>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="main-content">
+        <header>
+            <h1 id="title"></h1>
+            <div id="desc"></div>
+        </header>
+        <button id="yes" class="btn-yes"></button>
+        <button id="no" class="btn-no"></button>
+    </div>
+
+    <!-- Bubble tea modal -->
+    <div id="bubbletea-modal" class="modal-overlay hidden">
+        <div class="glass-card bubbletea-card">
+            <img src="img/loopy-laugh.jpg" class="bbt-mascot" alt="">
+            <h2 id="btTitle" class="card-title"></h2>
+            <p id="btDesc" class="card-desc"></p>
+            <div class="menu-wrap">
+                <img src="img/bubble-tea-menu.webp" class="menu-img" alt="KOI Thé Menu">
+            </div>
+            <div class="bbt-input-wrap">
+                <span class="bbt-input-icon">🧋</span>
+                <textarea id="bubbletea-input" class="bbt-input" autocomplete="off"></textarea>
+            </div>
+            <button id="btnBubbletea" class="btn-primary"></button>
+        </div>
+    </div>
+
+    <!-- Final screen -->
+    <div id="final-screen" class="final-screen hidden">
+        <canvas id="fireworks-canvas"></canvas>
+        <div class="final-content">
+            <div class="final-hero">
+                <img src="img/happy-dog.jpg" class="final-dog-img" alt="">
+            </div>
+            <h1 id="finalTitle" class="final-title"></h1>
+            <p id="finalSubtitle" class="final-subtitle"></p>
+            <div class="final-divider"></div>
+            <div class="bbt-badge" id="bbtBadge">
+                <div class="bbt-badge-cup">🧋</div>
+                <div class="bbt-badge-body">
+                    <span class="bbt-badge-label">Order của em</span>
+                    <span class="bbt-badge-value" id="bbtOrderValue"></span>
+                </div>
+            </div>
+            <div class="glass-card final-card">
+                <span id="finalCardLabel" class="final-card-label"></span>
+                <ul id="finalItems" class="final-items"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="./config.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
